@@ -12,7 +12,7 @@ const WHATSAPP_URL = `https://wa.me/5527981359051?text=${encodeURIComponent(
 const links = [
   {
     label: "REVENDA LOVABLE ILIMITADO",
-    description: "Acesse agora e conheça",
+    description: "Comece ganhar dinheiro agora",
     href: "https://hyrolovable.lovable.app/",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
@@ -80,7 +80,7 @@ function Index() {
               rel="noopener noreferrer"
               className={
                 link.highlight
-                  ? "group relative flex items-center gap-4 rounded-2xl bg-gradient-to-r from-glow-orange via-glow-pink to-glow-blue p-[2px] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-btn-glow active:translate-y-0"
+                  ? "group relative flex items-center gap-4 rounded-2xl p-[2px] gradient-border-animated shadow-btn-glow transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0"
                   : "group flex items-center gap-4 rounded-2xl border border-border bg-card p-[2px] transition-all duration-200 hover:-translate-y-0.5 hover:border-glow-pink/40 active:translate-y-0"
               }
             >
