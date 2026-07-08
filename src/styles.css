@@ -133,6 +133,28 @@
   }
 }
 
+@utility gradient-border-animated {
+  background: linear-gradient(
+    115deg,
+    var(--glow-orange),
+    var(--glow-pink),
+    var(--glow-blue),
+    var(--glow-pink),
+    var(--glow-orange)
+  );
+  background-size: 300% 100%;
+  animation: gradient-shift 6s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
