@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
 import logoAsset from "@/assets/logo.jpg.asset.json";
+import bundledLogoUrl from "@/assets/logo-vercel.jpg";
 
-const bundledLogoUrl = new URL("../assets/logo-vercel.jpg", import.meta.url).href;
 const logoSources = [bundledLogoUrl, "/logo.jpg", logoAsset.url];
 
 export const Route = createFileRoute("/")({
