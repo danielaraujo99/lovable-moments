@@ -1,10 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-
-import logoAsset from "@/assets/logo.jpg.asset.json";
-import bundledLogoUrl from "@/assets/logo-vercel.jpg";
-
-const logoSources = [bundledLogoUrl, "/logo.jpg", logoAsset.url];
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -129,20 +123,13 @@ function Index() {
 }
 
 function LogoImage() {
-  const [sourceIndex, setSourceIndex] = useState(0);
-
   return (
     <img
-      src={logoSources[sourceIndex]}
+      src="/logo.jpg"
       alt="Logo Lovable Infinito"
       className="h-24 w-24 object-cover sm:h-28 sm:w-28"
       decoding="async"
       fetchPriority="high"
-      onError={() => {
-        setSourceIndex((currentIndex) =>
-          currentIndex < logoSources.length - 1 ? currentIndex + 1 : currentIndex,
-        );
-      }}
     />
   );
 }
