@@ -12,8 +12,8 @@ const WHATSAPP_URL = `https://wa.me/5527981359051?text=${encodeURIComponent(
 const links = [
   {
     label: "EXTENSÃO LOVABLE ILIMITADO",
-    description: "Comece ganhar dinheiro agora",
-    href: "https://hyrolovable.lovable.app/",
+    description: "Crie projetos de forma ilimitada sem gastar créditos",
+    href: "https://lovehyro.store",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
         <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
@@ -66,7 +66,7 @@ function Index() {
           </span>
         </h1>
         <p className="mt-2 text-center text-sm text-muted-foreground">
-          Acesso ilimitado • Revenda oficial
+          Lovable ilimitado
         </p>
 
         {/* Divider */}
