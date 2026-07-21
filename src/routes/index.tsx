@@ -66,7 +66,7 @@ function Index() {
           </span>
         </h1>
         <p className="mt-2 text-center text-sm text-muted-foreground">
-          Acesso ilimitado • Revenda oficial
+          Lovable ilimitado
         </p>
 
         {/* Divider */}
